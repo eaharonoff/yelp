@@ -11,7 +11,7 @@ class Restaurant{
  }
 
  static findByName(name){
-    return store.restaurants.find(function find(restaurant){return restaurant.name == name})
+    return store["restaurants"].find(function find(restaurant){return restaurant.name == name})
   }
 
   reviews(){

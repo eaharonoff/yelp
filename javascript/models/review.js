@@ -6,6 +6,6 @@ class Review{
     store.reviews.push(this)
   }
   static all(){
-    return store.reviews
+    return store["reviews"]
   }
 }

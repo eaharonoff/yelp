@@ -4,11 +4,11 @@ class Customer {
     store["customers"].push(this)
   }
   static all(){
-    return store.customers
+    return store["customers"]
   }
 
   static findByName(name){
-    return store.customers.find(function find(person){return person.name == name})
+    return store["customers"].find(function find(person){return person.name == name})
   }
 
   addReview(text, restaurant){
