@@ -19,3 +19,19 @@ id | name |
 # - Do the belongs_to first
 # - Then do the has_many
 # - If there is a many to many, we need a third table
+
+# owners
+
+id| name |
+
+# restaurants
+
+id| name | owner_id 
+
+# customers 
+
+id| name  |
+
+#reviews 
+
+id| customer_id | restaurant_id | body 
